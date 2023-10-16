@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Style untuk keseluruhan-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Style untuk bootstrap (navbar)-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        footer{
+            font-family: consolas;
+            background-color: #A0522D;
+            padding:15px;
+            color: white;
+            font-size: 17px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!--Bagian Navigasi-->
+        <nav id="home">
+            <div class="container-fluid">   
+            <a class="navbar-brand" href="#">SENTRA RASA</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarNav">
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li><a href="#" onclick="scrollToElement('home') "style="background-color: transparent">Home</a></li>
+
+                    <li><a href="#" onclick="scrollToElement('tentang')" style="background-color: transparent">Tentang Kami</a></li>
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" style="background-color: transparent">Menu<span class="caret"></span></a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="#" onclick="scrollToElement('makanan')"style="background-color: transparent">Makanan</a></li>
+
+                            <li><a href="#" onclick="scrollToElement('minuman')"style="background-color: transparent">Minuman</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#" onclick="scrollToElement('kontak')" style="background-color: transparent">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--Gambar home-->
+    <div class="container-img" id="home">
+        <img src="gambar_menu.jpg">
+        <div class="image-text">SENTRA RASA</div>
+    </div>
+
+
+
+    <!--Bagian About Us-->
+    <br><br>
+    <div class="container" id="tentang">
+        <h2>TENTANG KAMI</h2>
+        <br><br><br>
+        <div class="image">
+            <img src="gambar_home1.jpg" style="height: auto;">
+        </div>
+        <div class="text clearfix">
+            <br><br>
+            Penjelasan mengenai makanan dan restoran.
+            Penjelasan mengenai makanan dan restoran.
+            Penjelasan mengenai makanan dan restoran.
+            Penjelasan mengenai makanan dan restoran.
+            Penjelasan mengenai makanan dan restoran.
+            Penjelasan mengenai makanan dan restoran.
+            Penjelasan mengenai makanan dan restoran.
+            Penjelasan mengenai makanan dan restoran.
+            Penjelasan mengenai makanan dan restoran.
+
+            <p id="text-tentang" style="display:none">
+            Penjelasan mengenai makanan dan restoran.
+            Penjelasan mengenai makanan dan restoran.
+            Penjelasan mengenai makanan dan restoran.
+            Penjelasan mengenai makanan dan restoran.
+            Penjelasan mengenai makanan dan restoran.
+            Penjelasan mengenai makanan dan restoran.
+            Penjelasan mengenai makanan dan restoran.
+            Penjelasan mengenai makanan dan restoran.
+            Penjelasan mengenai makanan dan restoran.</p>
+
+            <br><br><button type="button" id="showButton">Lebih Banyak</button>
+        </div>
+    </div>
+
+
+
+
+    <!--Bagian Menu Makanan-->
+    <br><br><br>
+    <div class="container" id="makanan">
+        <h2>MENU</h2>
+        <br><br>
+        <h4> Makanan</h4>
+        <br><br>
+
+        <div class="row">
+            <div class="col-md-4 ">
+                <img src="gambar_soto.jpg">
+                <p></p>
+                <p>Soto</p>
+                <p>Rp 15.000</p>
+                <br>
+            </div>
+            <div class="col-md-4 mr-md-4">
+                <img src="gambar_ikanbakar.png">
+                <p></p>
+                <p>Ikan Bakar</p>
+                <p>Rp 30.000</p>
+                <br>
+            </div>
+            <div class="col-md-4 mr-md-4">
+                <img src="gambar_ayambakar.jpg">
+                <p></p>
+                <p>Ayam Bakar</p>
+                <p>Rp 20.000</p>
+                <br>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--Bagian Menu Minuman-->
+    <br><br>
+    <div class="container" id="minuman">
+        <h4>Minuman</h4>
+        <br><br>
+
+        <div class="row">
+            <div class="col-md-4">
+                <img src="gambar_teh.jpg">
+                <p></p>
+                <P>Teh</P>
+                <p>Rp 5.000</p>
+                <br>
+            </div>
+            <div class="col-md-4">
+                <img src="gambar_kelapa.jpg">
+                <p></p>
+                <P>Kelapa Muda</P>
+                <p>Rp 15.000</p>
+                <br>
+            </div>
+            <div class="col-md-4">
+                <img src="gambar_sekoteng.jpg">
+                <p></p>
+                <P>Sekoteng</P>
+                <p>Rp 10.000</p>
+                <br>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--Bagian Contact-->
+    <br><br>
+    <div class="container" id="kontak">
+        <h2>KONTAK</h2>
+    </div>
+    <br><br>
+
+    <div class="row">
+        <div class="col-md-6">
+            <br><br>
+            <p>JAM BUKA</p>
+            <br>Senin-kamis : 10.00 - 21.00
+            <br>Jumat-Sabtu : 09.00 - 22.00
+            <br>Minggu :Libur
+        </div>
+        <div class="col-md-6">
+            <br><br>
+            <p>LOKASI</p>
+            <br>Jl. Melati no.17
+            <br>Kota Pekanbaru, Riau
+        </div>
+    </div>
+
+    <br><br>
+    <div class="row">
+        <div class="col-md-6">
+            <br><br>
+            <p>KONTAK</p>
+            <br>No telepon : 091234567890
+            <br>Email : sentrarasa@gmail.com
+        </div>
+        <div class="col-md-6">
+            <br><br>
+            <p>MEDIA SOSIAL</p>
+            <br>Instagram : sentra_rasa
+            <br>Tiktok : sentra_rasa
+        </div>
+    </div>
+
+    <br><br><br>
+    <div class="container">
+        <h4><center>HUBUNGI KAMI</center></h4>
+        <br>
+    <form action="#">
+        <label for="nama">Nama : </label><br>
+        <input type="text" id="nama" name="nama"><br><br>
+        <label for="lname">Email : </label><br>
+        <input type="text" id="email" name="email"><br><br>
+        <label for="pesan">Pesan : </label><br>
+        <textarea name="pesan"></textarea><br><br>
+        <button>
+            <input type="submit" value="Submit">
+        </button>
+    </form> 
+</div>
+
+
+    <!--Bagian Footer-->
+    <br><br>
+    <footer>
+        sentrarasa | 2023
+    </footer>
+
+
+<!--Untuk javascript-->
+    <script src="script.js"></script>
+
+</body>
+</html>
